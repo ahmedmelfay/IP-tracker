@@ -39,5 +39,4 @@ yarn-error.log*
 .DS_Store
 
 /design
-/images
 /style-guide.md

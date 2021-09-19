@@ -6,7 +6,9 @@ const Map = () => {
   const state = useSelector((state) => state);
   console.log(state);
   return state.loading ? (
-    <h1>Loading..</h1>
+    <div className={mapStyles.loadingContainer}>
+      <span className={`loading__anim ${mapStyles.loading}`}></span>
+    </div>
   ) : (
     <section id={mapStyles.map}>
       <div style={{ position: "relative", zIndex: 0 }}>

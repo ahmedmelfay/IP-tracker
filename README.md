@@ -14,6 +14,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknoledgments](#acknoledgments)
 
 ## Overview
 
@@ -28,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
@@ -53,10 +54,13 @@ I finally got the hang of redux and learnt how to use it to manage complext stat
 
 ### Continued development
 
-- Design Improvement
+- Design Improvement =>
   Although this design is from frontendmento.io, i'd still like to improve it, and maybe add different themes option.
 
-- Different search options
+- Different search options =>
+  Its a WIP feature where user can search by domain name instead of IP Address
+
+- Handling errors whenever users enters an invalid IP or domain =>
   Its a WIP feature where user can search by domain name instead of IP Address
 
 ### Useful resources
@@ -69,3 +73,7 @@ I finally got the hang of redux and learnt how to use it to manage complext stat
 
 - Frontend Mentor - [@ahmedmelfay](https://www.frontendmentor.io/profile/ahmedmelfay)
 - LinkedIn - [@ahmed-elhoseny](https://www.linkedin.com/in/ahmed-elhoseny-9790b41a9/)
+
+## Acknoledgments
+
+- Loading animation is from a codepen. - (https://codepen.io/X3NOSAURUS/pen/VwbBQqR)

@@ -47,7 +47,7 @@ const Search = () => {
     <div className={headerStyles.header}>
       <form className={headerStyles.form} onSubmit={handleSubmit}>
         <input placeholder="Search for any IP Address" type="text" name="searchIP" value={search} onChange={handleChange} />
-        <button type="submit" className={headerStyles.searchBtn}>
+        <button aria-label="Search for IP" type="submit" className={headerStyles.searchBtn}>
           <i className="fas fa-arrow-right"></i>
         </button>
       </form>

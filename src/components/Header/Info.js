@@ -24,10 +24,10 @@ const Info = () => {
   //Conditional rendering for loaders
   return state.loading ? (
     <div className={headerStyles.info}>
-      <InfoCol title="IP ADDRESS" value="loading.." />
-      <InfoCol title="LOCATION" value="loading.." />
-      <InfoCol title="TIMEZONE" value="loading.." />
-      <InfoCol title="ISP" value="loading.." />
+      <InfoCol title="IP ADDRESS" />
+      <InfoCol title="LOCATION" />
+      <InfoCol title="TIMEZONE" />
+      <InfoCol title="ISP" />
     </div>
   ) : (
     <div className={headerStyles.info}>

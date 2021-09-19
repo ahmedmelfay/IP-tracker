@@ -5,7 +5,7 @@ const InfoCol = ({ title, value }) => {
   return (
     <div className={headerStyles.infoCol}>
       <p>{title}</p>
-      <h2>{value}</h2>
+      {!value ? <span className={`loading__anim ${headerStyles.loading}`}></span> : <h2>{value}</h2>}
     </div>
   );
 };

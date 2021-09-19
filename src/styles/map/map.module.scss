@@ -4,3 +4,14 @@
     width: 100%;
   }
 }
+.loadingContainer {
+  width: 100%;
+  height: calc(100vh - 250px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  width: 100px;
+  height: 100px;
+}

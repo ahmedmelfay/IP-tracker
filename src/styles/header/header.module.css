@@ -1,8 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 #header {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 24px;
+  background-image: url("../../images/pattern-bg.png");
+  background-position: center;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+#header .innerHeader {
+  height: 275px;
+  position: relative;
+}
+
+#header .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+#header .title {
+  text-align: center;
+  padding-top: 32px;
+  color: white;
+  font-size: 12px;
+}
+
+#header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: white;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#header .infoCol {
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+#header p {
+  color: #686868;
+}
+
+#header h2 {
+  -webkit-animation: display 0.5s;
+          animation: display 0.5s;
+}
+
+@-webkit-keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#header input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 8px;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+#header input:focus {
+  color: gray;
+}
+
+#header .loading {
+  margin-top: 10px;
+}
+
+#header .searchBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: black;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+#header .searchBtn:hover {
+  background-color: gray;
+}
+
+#header i {
+  color: white;
+  font-size: 24px;
+  padding: 0 15px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #header .infoCol {
+    width: 50%;
+    padding: 18px 0;
+  }
+  #header .form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (min-width: 1440px) {
+  #header .infoCol {
+    width: 25%;
+    padding: 28px;
+  }
 }
 /*# sourceMappingURL=header.module.css.map */

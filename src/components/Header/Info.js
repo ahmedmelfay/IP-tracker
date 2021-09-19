@@ -1,28 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import headerStyles from "../../styles/header/header.module.scss";
 import { useSelector } from "react-redux";
 import InfoCol from "./InfoCol";
 import { useDispatch } from "react-redux";
-import { loading as loadingChange } from "../../redux/actions/loadingAction";
+import { loading } from "../../redux/actions/loadingAction";
 
 const Info = () => {
   //Redux state (store)
   const state = useSelector((state) => state);
 
-  const [loading, setLoading] = useState(true);
-
   //dataChanged detects if user changed the IP in search (by default the initial ip is current user's ip)
-  const dataChanged = useSelector((state) => state.loading);
   const dispatch = useDispatch();
 
-  //Handling loader when  fetching for first time and when user enters new IP in Search component
+  //Handling loader for initial IP
   useEffect(() => {
-    if (Object.entries(state.data).length) setLoading(false);
-    dispatch(loadingChange(false));
+    if (!Object.entries(state.data).length) {
+      dispatch(loading(true));
+      return;
+    }
+    dispatch(loading(false));
   }, [state.data]);
 
   //Conditional rendering for loaders
-  return dataChanged || loading ? (
+  return state.loading ? (
     <div className={headerStyles.info}>
       <InfoCol title="IP ADDRESS" value="loading.." />
       <InfoCol title="LOCATION" value="loading.." />
